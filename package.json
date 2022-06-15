@@ -1,0 +1,22 @@
+{
+  "name": "ood-encapsulation",
+  "version": "1.0.0",
+  "description": "* Define `behaviour` as the thing a program does\r * Explain that a `class` is a convenient encapsulation of behaviour\r * Encapsulate program behaviour into cohesive classes.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mirkan-k/ood-encapsulation.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mirkan-k/ood-encapsulation/issues"
+  },
+  "homepage": "https://github.com/mirkan-k/ood-encapsulation#readme",
+  "devDependencies": {
+    "jasmine": "^4.2.0"
+  }
+}
