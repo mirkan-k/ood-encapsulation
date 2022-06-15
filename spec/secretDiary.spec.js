@@ -48,7 +48,7 @@ describe('SecretDiary', () => {
     // set up
     secretDiary.lock()
     // execute
-    const result = secretDiary.getEntries()
+    const result = secretDiary.getAllEntries()
     // verify
     expect(result).toEqual('error')
   })
@@ -61,7 +61,7 @@ describe('SecretDiary', () => {
     const expected = {date: date, entry: entry}
     // execute
     const addEntry = secretDiary.addEntryToDiary(date, entry)
-    const result = secretDiary.getEntries()
+    const result = secretDiary.getAllEntries()
     // verify
     expect(addEntry).toEqual(true)
     expect(result[0].date).toEqual(expected.date)
@@ -78,7 +78,7 @@ describe('SecretDiary', () => {
         {date: '16/06/2022', entry: 'blah?'} 
     ]
     // execute
-    const result = secretDiary.getEntries()
+    const result = secretDiary.getAllEntries()
     // verify
     expect(addEntry1).toEqual(true)
     expect(addEntry2).toEqual(true)
